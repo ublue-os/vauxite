@@ -1,0 +1,36 @@
+---
+include: xfce-desktop-pkgs.yaml
+
+ref: vauxite-desktop
+rojig:
+  name: vauxite-desktop
+  summary: "Vauxite Desktop"
+  license: MIT
+  description: "Immutable Fedora-based Xfce desktop"
+
+repos:
+  - fedora-37
+  - fedora-37-updates
+
+packages:
+  - fedora-release-ostree-desktop
+  - borgbackup
+  - borgmatic
+  - fzf
+  - micro
+  - most
+  - podman-compose
+  - rofi
+  - rofimoji
+  - snapper
+  - tmux
+  - wireguard-tools
+  - xclip
+  - xfce4-cpugraph-plugin
+  - xfce4-genmon-plugin
+  - xfce4-weather-plugin
+  - zsh
+
+add-files:
+  - ["extra/libtaskbar.so", "/usr/lib64/xfce4/panel/plugins/libtaskbar.so"]
+  - ["extra/taskbar.desktop", "/usr/share/xfce4/panel/plugins/taskbar.desktop"]

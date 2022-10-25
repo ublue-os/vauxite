@@ -1,0 +1,19 @@
+include: fedora-common-ostree.yaml
+ref: fedora/37/${basearch}/base
+rojig:
+  name: fedora-base
+  summary: "Fedora base image for alternative DE"
+  license: MIT
+packages:
+  # Generic release package for desktop variants
+  - fedora-release
+  - fedora-release-ostree-desktop
+  # XWayland support
+  - xorg-x11-server-Xwayland
+  # Portals for Flatpak
+  - xdg-desktop-portal
+  - xdg-desktop-portal-gtk
+
+repos:
+  - fedora-37
+  - fedora-37-updates
