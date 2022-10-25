@@ -16,8 +16,8 @@ packages:
   - fedora-release-ostree-desktop
   - borgbackup
   - borgmatic
+  - emacs-nox
   - fzf
-  - micro
   - most
   - podman-compose
   - rofi
