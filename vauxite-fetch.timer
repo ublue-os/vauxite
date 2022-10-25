@@ -1,0 +1,10 @@
+[Unit]
+Description=Fetch the Vauxite repo from GitHub
+
+[Timer]
+Persistent=true
+OnCalendar=Sat *-*-* 3:00:00
+Unit=vauxite-fetch.service
+
+[Install]
+WantedBy=timers.target
