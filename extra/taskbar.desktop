@@ -1,0 +1,14 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=Taskbar Taskbar
+Comment=A modern, minimalist taskbar for XFCE
+Comment[fr]=Une barre des tâches moderne et minimaliste pour XFCE
+Comment[it]=Una Taskbar moderna e minimale per XFCE
+Comment[ja]=XFCE用のモダンで小さなタスクバー
+Comment[ru]=Простая и современная панель задач для XFCE.
+Icon=preferences-system-windows
+X-XFCE-Module=taskbar
+X-XFCE-Internal=false
+X-XFCE-Unique=false
+X-XFCE-API=2.0

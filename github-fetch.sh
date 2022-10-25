@@ -3,11 +3,11 @@
 set -eux
 
 # download latest repo build
-REPO_FINAL="$(dirname $0)/vauxite-workstation"
+REPO_FINAL="$(dirname $0)/vauxite-desktop"
 REPO="${REPO_FINAL}.new"
 
 CURL="curl -u token:$(cat ~/.config/github-token) --show-error --fail"
-RESPONSE=$($CURL --silent https://api.github.com/repos/hyperreal64/ostree-vauxite-workstation/actions/artifacts)
+RESPONSE=$($CURL --silent https://api.github.com/repos/hyperreal64/ostree-vauxite-desktop/actions/artifacts)
 ZIP=$(echo "$RESPONSE" | jq --raw-output '.artifacts | map(select(.name == "repository"))[0].archive_download_url')
 echo "INFO: Downloading $ZIP ..."
 success=
@@ -26,3 +26,7 @@ rm /tmp/repository.zip
 [ ! -e "$REPO_FINAL" ] || mv "${REPO_FINAL}" "${REPO_FINAL}.old"
 mv "$REPO" "$REPO_FINAL"
 rm -rf "${REPO_FINAL}.old"
+
+chcon -Rt httpd_sys_content_t "$REPO_FINAL"
+chcon -Rt httpd_sys_rw_content_t "$REPO_FINAL"
+chmod +x "$REPO_FINAL"
