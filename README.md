@@ -9,7 +9,7 @@ There are currently no installer images, but Vauxite may be installed from an ex
 Add my server URL as a new remote:
 
 ```shell
-sudo ostree remote add --no-gpg-verify hyperreal https://ostree.hyperreal.coffee
+sudo ostree remote add --no-gpg-verify hyperreal https://ostree.hyperreal.coffee/vauxite-desktop
 ```
 
 Pin the current tree in case something breaks during or after the rebase:
