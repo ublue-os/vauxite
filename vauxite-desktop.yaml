@@ -25,6 +25,7 @@ packages:
   - snapper
   - tmux
   - wireguard-tools
+  - xarchiver
   - xclip
   - xfce4-cpugraph-plugin
   - xfce4-genmon-plugin
