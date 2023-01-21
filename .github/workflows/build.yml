@@ -17,16 +17,5 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v2
 
-      - name: Build OSTree
-        run: ./compose.sh
-
-      # upload-artifact@v2 has trouble with tens of thousands of files
-      - name: Create repo tarball
-        run: tar -czf /var/tmp/repo.tar.gz -C /var/tmp/repo .
-
-      - name: Create repository artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: repository
-          path: /var/tmp/repo.tar.gz
-          retention-days: 14
+      - name: Build OSTree container image and push to registry
+        run: rpm-ostree compose image --initialize --format=registry fedora-vauxite.yaml ghcr.io/ublue-os/vauxite:latest
