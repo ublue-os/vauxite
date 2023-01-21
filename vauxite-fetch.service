@@ -1,8 +1,0 @@
-[Unit]
-Description=Fetch the Vauxite repository from GitHub
-
-[Service]
-Type=oneshot
-ExecStart=/srv/repo/github-fetch.sh
-Restart=on-abnormal
-WorkingDirectory=/srv/repo
