@@ -8,5 +8,12 @@ There are currently no installer images, but Vauxite may be installed from an ex
 
 On Fedora Silverblue or Kinoite, run the following command to rebase to Vauxite:
 ```shell
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/ublue-os/vauxite:latest
+rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/ublue-os/vauxite:latest
 ```
+
+New images are built daily. To update to the latest diff, run:
+```shell
+rpm-ostree update
+```
+
+We expect to be able to install or rebase to container images from the Anaconda installer UI in the future.
