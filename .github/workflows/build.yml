@@ -18,7 +18,7 @@ jobs:
       options: --privileged --security-opt label:disable
     steps:
       - name: Install dependencies
-        run: dnf install -y rpm-ostree selinux-policy selinux-policy-targeted policycoreutils
+        run: dnf install -y rpm-ostree selinux-policy selinux-policy-targeted policycoreutils podman
 
       - name: Clone repository
         uses: actions/checkout@v2
