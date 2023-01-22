@@ -17,5 +17,8 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v2
 
+      - name: Login
+        run: podman login --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} ghcr.io
+
       - name: Build OSTree container image and push to registry
         run: rpm-ostree compose image --initialize --format=registry fedora-vauxite.yaml ghcr.io/ublue-os/vauxite:latest
