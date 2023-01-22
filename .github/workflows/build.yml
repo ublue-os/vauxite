@@ -1,7 +1,14 @@
 name: build
 on:
+on:
+  pull_request:
+    branches:
+      - main
   schedule:
     - cron: 0 2 * * 6
+  push:
+    branches:
+      - main
   workflow_dispatch:
 jobs:
   build:
