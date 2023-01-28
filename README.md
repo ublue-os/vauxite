@@ -8,7 +8,7 @@ There are currently no installer images, but Vauxite may be installed from an ex
 
 On Fedora Silverblue or Kinoite, run the following command to rebase to Vauxite:
 ```shell
-rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/ublue-os/vauxite:latest
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/vauxite:latest
 ```
 
 New images are built daily. To update to the latest diff, run:
