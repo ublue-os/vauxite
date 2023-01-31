@@ -11,6 +11,11 @@ On Fedora Silverblue or Kinoite, run the following command to rebase to Vauxite:
 rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/ublue-os/vauxite:latest
 ```
 
+Alternatively, one may rebase from the (un)official Fedora ostree desktops registry, but note that only images for 37 and Rawhide are currently available for Vauxite:
+```shell
+rpm-ostree rebase ostree-unverified-registry:quay.io/fedora-ostree-desktops/vauxite:37
+```
+
 New images are built daily. To update to the latest diff, run:
 ```shell
 rpm-ostree update
