@@ -8,7 +8,7 @@ There are currently no installer images, but Vauxite may be installed from an ex
 
 On Fedora Silverblue or Kinoite, run the following command to rebase to Vauxite:
 ```shell
-rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/ublue-os/vauxite:latest
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/vauxite:latest
 ```
 
 Alternatively, one may rebase from the (un)official Fedora ostree desktops registry, but note that only images for 37 and Rawhide are currently available for Vauxite:
