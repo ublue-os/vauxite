@@ -17,6 +17,7 @@ packages:
   - mousepad
   - ristretto
   - xarchiver
+  - xfce4-panel-profiles
 repos:
   - fedora-37
   - fedora-37-updates
