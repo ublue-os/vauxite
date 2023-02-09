@@ -6,7 +6,10 @@ mutate-os-release: "37"
 include: fedora-common-ostree-pkgs.yaml
 
 packages:
+  # Do not include "full" Git as it brings in Perl
   - git-core
+  # Explicitely add Git docs
+  - git-core-doc
   - lvm2
   - rpm-ostree
   # Container management
@@ -50,7 +53,6 @@ check-groups:
 default_target: graphical.target
 
 packages-aarch64:
-  - bootupd
   - grub2-efi
   - ostree-grub2
   - efibootmgr
@@ -65,7 +67,6 @@ packages-ppc64le:
   - grub2
   - ostree-grub2
 packages-x86_64:
-  - bootupd
   - grub2-efi-ia32
   - grub2-efi-x64
   - grub2-pc

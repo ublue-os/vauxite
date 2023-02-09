@@ -8,7 +8,6 @@ packages:
   - abattis-cantarell-vf-fonts
   - acl
   - adwaita-qt5
-  - alsa-sof-firmware
   - alsa-ucm
   - alsa-utils
   - amd-gpu-firmware
@@ -44,8 +43,10 @@ packages:
   - exfatprogs
   - fedora-bookmarks
   - fedora-chromium-config
+  - fedora-flathub-remote
   - fedora-repos-modular
   - fedora-workstation-backgrounds
+  - fedora-workstation-repositories
   - file
   - filesystem
   - firefox
@@ -123,8 +124,6 @@ packages:
   - liberation-mono-fonts
   - liberation-sans-fonts
   - liberation-serif-fonts
-  - libertas-sd8686-firmware
-  - libertas-sd8787-firmware
   - libertas-usb8388-firmware
   - libglvnd-gles
   - linux-firmware
@@ -238,3 +237,5 @@ packages:
   - zd1211-firmware
   - zip
   - zram-generator-defaults
+packages-x86_64:
+  - alsa-sof-firmware

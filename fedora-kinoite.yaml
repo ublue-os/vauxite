@@ -1,0 +1,41 @@
+include: kde-desktop-pkgs.yaml
+ref: fedora/37/${basearch}/kinoite
+rojig:
+  name: fedora-kde
+  summary: "Fedora Kinoite (KDE) base image"
+  license: MIT
+packages:
+  - fedora-release-kinoite
+  # Wayland support
+  - kwayland-integration
+  - kwin-wayland
+  - plasma-workspace-wayland
+  - xorg-x11-server-Xwayland
+  # Portals for Flatpak
+  - xdg-desktop-portal-kde
+  # Provide an archive manager by default
+  - ark
+  # Keep some basic apps installed until we have Flatpaks available
+  # See https://pagure.io/fedora-kde/SIG/issue/13
+  - gwenview
+  - kcalc
+  - kwrite
+  - okular
+  # Install some minor optional tools for KInfoCenter
+  - vulkan-tools
+  - xdpyinfo
+  # Includes a KIO & KCM (can not be Flatpak'ed), used by Dolphin and Gwenview
+  # See https://pagure.io/fedora-kde/SIG/issue/291
+  - kamera
+
+# Make sure the following are not pulled in when Recommended by other packages
+exclude-packages:
+  - plasma-discover-offline-updates
+  - plasma-discover-packagekit
+  # Exclude currently broken support for rpm-ostree in Discover
+  - plasma-discover-rpm-ostree
+  - plasma-pk-updates
+
+repos:
+  - fedora-37
+  - fedora-37-updates
