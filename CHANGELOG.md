@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/ublue-os/vauxite/compare/v1.0.0...v1.0.1) (2023-02-09)
+
+
+### Bug Fixes
+
+* update comps-sync.py-generated files to reflect upstream ([d65490a](https://github.com/ublue-os/vauxite/commit/d65490a2cf64462428dc537575c1c2acdfd20ae1))
+
 ## 1.0.0 (2023-02-06)
 
 
