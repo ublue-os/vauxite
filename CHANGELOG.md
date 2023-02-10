@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/ublue-os/vauxite/compare/v1.0.1...v1.1.0) (2023-02-10)
+
+
+### Features
+
+* add firstboot script ([334906b](https://github.com/ublue-os/vauxite/commit/334906b7fb55cfe7983988bdcd5f2131a4da9f55))
+
 ## [1.0.1](https://github.com/ublue-os/vauxite/compare/v1.0.0...v1.0.1) (2023-02-09)
 
 
