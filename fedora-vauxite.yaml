@@ -21,5 +21,3 @@ packages:
 repos:
   - fedora-37
   - fedora-37-updates
-
-add-files: [["etc", "/etc"], ["vauxite-firstboot", "/usr/bin/vauxite-firstboot"]]
