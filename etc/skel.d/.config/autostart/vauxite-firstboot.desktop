@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Vauxite Desktop FirstBoot Setup
+Comment=Removes Silverblue or Kinoite flatpaks on first boot
+Exec=/usr/bin/vauxite-firstboot
+Icon=org.xfce.terminal
+Type=Application
+Categories=Utility;System;
+Name[en_US]=startup

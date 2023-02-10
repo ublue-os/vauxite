@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+if test -e "${HOME}/.config/vauxite/firstboot-done"; then
+    echo "Already ran. Exiting ..."
+    exit 0
+fi
+
+echo "Waiting for Internet connection ..."
+until /usr/bin/ping -q -c 1 flathub.org; do sleep 1; done
+echo "00"
+
+echo "Removing all preinstalled Flatpaks ..."
+if ! /usr/bin/flatpak remove --system --noninteractive --all; then
+    echo "Removing all preinstalled Flatpaks failed"
+    echo "Please report the error to https://github.com/ublue-os/vauxite/issues"
+    exit 1
+fi
+
+echo "All preinstalled Flatpaks left over from Silverblue have been removed."
+echo "Enjoy Vauxite! Have a nice day :-)"
+sleep 4
+exit 0
