@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/ublue-os/vauxite/compare/v1.1.0...v1.2.0) (2023-02-14)
+
+
+### Features
+
+* add xfce4-clipman-plugin ([cb585d3](https://github.com/ublue-os/vauxite/commit/cb585d333d455b88c36608350dcf36da40b1dc4a))
+
 ## [1.1.0](https://github.com/ublue-os/vauxite/compare/v1.0.1...v1.1.0) (2023-02-10)
 
 
