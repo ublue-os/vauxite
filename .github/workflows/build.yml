@@ -28,9 +28,29 @@ jobs:
       - name: Login
         run: podman login --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} ghcr.io
 
+      - name: Image Metadata
+        uses: docker/metadata-action@v4
+        id: meta
+        with:
+          images: |
+            vauxite
+          labels: |
+            io.artifacthub.package.readme-url=https://raw.githubusercontent.com/ublue-os/vauxite/main/README.md
+
+      - name: Build label flags
+        id: fmt
+        run: |
+          LABELS=$(cat << EOF
+          ${{ steps.meta.outputs.labels }}
+          EOF
+          )
+          IFS=$'\n'
+          OUTPUT=$(for l in $LABELS; do echo -n "-l \"$l\" "; done)
+          echo "labels=$OUTPUT" >> $GITHUB_OUTPUT
+
       - name: Build OSTree container image and push to registry
         uses: Wandalen/wretry.action@master
         with:
-          command: rpm-ostree compose image --initialize --format=registry fedora-vauxite.yaml ghcr.io/ublue-os/vauxite:latest
+          command: rpm-ostree compose image --initialize --format=registry ${{ steps.fmt.outputs.labels }} fedora-vauxite.yaml ghcr.io/ublue-os/vauxite:latest
           attempt_limit: 3
           attempt_delay: 2000
