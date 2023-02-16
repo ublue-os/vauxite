@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.3.0](https://github.com/ublue-os/vauxite/compare/v1.2.0...v1.3.0) (2023-02-16)
+
+
+### Features
+
+* format labels ([25be20d](https://github.com/ublue-os/vauxite/commit/25be20db4a407fc5a3143a908311a386c6b162a6))
+* image labels for rpm-ostree ([1083597](https://github.com/ublue-os/vauxite/commit/1083597a40a14216dc4f7ea6f83c8b99e365d6d5))
+
+
+### Bug Fixes
+
+* label split ([11b603f](https://github.com/ublue-os/vauxite/commit/11b603fd479d9a62bdcb1c6edccdeb177738b2b3))
+* remove deprecated set-env ([b8788fa](https://github.com/ublue-os/vauxite/commit/b8788fad96b42b9785c54d1a369b7cf31df4858f))
+
 ## [1.2.0](https://github.com/ublue-os/vauxite/compare/v1.1.0...v1.2.0) (2023-02-14)
 
 
