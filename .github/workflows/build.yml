@@ -46,7 +46,7 @@ jobs:
           )
           IFS=$'\n'
           OUTPUT=$(for l in $LABELS; do echo -n "-l \"$l\" "; done)
-          echo "::set-output name=labels::$OUTPUT"
+          echo "labels=$OUTPUT" >> $GITHUB_OUTPUT
 
       - name: Build OSTree container image and push to registry
         uses: Wandalen/wretry.action@master
