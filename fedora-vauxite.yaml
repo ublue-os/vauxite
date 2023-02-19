@@ -17,7 +17,12 @@ packages:
   - mousepad
   - ristretto
   - xarchiver
+  - xfce4-battery-plugin
   - xfce4-clipman-plugin
+  - xfce4-cpugraph-plugin
+  - xfce4-genmon-plugin
+  - xfce4-weather-plugin
+  - xfce4-whiskermenu-plugin
 repos:
   - fedora-37
   - fedora-37-updates
