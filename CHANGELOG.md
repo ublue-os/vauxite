@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/ublue-os/vauxite/compare/v1.3.0...v1.4.0) (2023-02-19)
+
+
+### Features
+
+* add xfce4 panel plugins ([53f0c4b](https://github.com/ublue-os/vauxite/commit/53f0c4bd55e4edee66bed758822a6917589ce1d3))
+
 ## [1.3.0](https://github.com/ublue-os/vauxite/compare/v1.2.0...v1.3.0) (2023-02-16)
 
 
