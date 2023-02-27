@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.1](https://github.com/ublue-os/vauxite/compare/v1.4.0...v1.4.1) (2023-02-27)
+
+
+### Bug Fixes
+
+* add dependabot for updating actions ([633c265](https://github.com/ublue-os/vauxite/commit/633c265a80b115afc08feb4431b4cf628866c0ab))
+* set dependabot to monitor github-actions ([dc5701e](https://github.com/ublue-os/vauxite/commit/dc5701e5b61d48d212037ea59be9ed1f2b5fd6cf))
+
 ## [1.4.0](https://github.com/ublue-os/vauxite/compare/v1.3.0...v1.4.0) (2023-02-19)
 
 
