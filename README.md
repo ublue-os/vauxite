@@ -1,5 +1,7 @@
 # Vauxite Desktop
 
+## This image is deprecated, please use the [vauxite-main](https://github.com/ublue-os/main) image instead! 
+
 This is an immutable Fedora-based Xfce desktop. It uses [rpm-ostree](https://coreos.github.io/rpm-ostree/), [podman](https://podman.io/), and [toolbox](https://containertoolbx.org/) for container-focused development workflows.
 
 There are currently no installer images, but the Xfce variant may be installed from an existing OSTree-based system like [Fedora Silverblue](https://silverblue.fedoraproject.org/) or [Fedora IoT](https://getfedora.org/en/iot/).
